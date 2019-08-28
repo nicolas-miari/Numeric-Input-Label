@@ -17,6 +17,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         label.delegate = self
+
+        label.customInputAccessoryView = {() -> UIToolbar in
+            let toolbar = UIToolbar(frame: .zero)
+            toolbar.translatesAutoresizingMaskIntoConstraints = false
+            let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+            let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(done(_:)))
+
+            toolbar.items = [space, done]
+            return toolbar
+        }()
+    }
+
+    @objc func done(_ sender: Any) {
+        label.resignFirstResponder()
     }
 }
 extension ViewController: NumericInputLabelDelegate {

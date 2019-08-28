@@ -19,24 +19,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swn-g7-eH6" customClass="NumericInputLabel" customModule="NumericInputLabelDemo" customModuleProvider="target">
-                                <rect key="frame" x="193.5" y="429" width="27" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <rect key="frame" x="187" y="381" width="40" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-u5-pgB">
-                                <rect key="frame" x="228.5" y="446" width="50" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-u5-pgB">
+                                <rect key="frame" x="235" y="418" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Allowed: 100,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9E-An-tSN">
+                                <rect key="frame" x="101.5" y="336" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="I9E-An-tSN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Oy-Od-09b"/>
                             <constraint firstItem="0Va-u5-pgB" firstAttribute="leading" secondItem="swn-g7-eH6" secondAttribute="trailing" constant="8" id="FiF-RX-jzN"/>
-                            <constraint firstItem="0Va-u5-pgB" firstAttribute="firstBaseline" secondItem="swn-g7-eH6" secondAttribute="firstBaseline" constant="-5" id="OGR-pa-Rcj"/>
-                            <constraint firstItem="swn-g7-eH6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="UJ6-Cp-8dT"/>
+                            <constraint firstItem="0Va-u5-pgB" firstAttribute="firstBaseline" secondItem="swn-g7-eH6" secondAttribute="firstBaseline" constant="-4" id="OGR-pa-Rcj"/>
+                            <constraint firstItem="swn-g7-eH6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-36" id="UJ6-Cp-8dT"/>
                             <constraint firstItem="swn-g7-eH6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kQX-fT-zIV"/>
+                            <constraint firstItem="swn-g7-eH6" firstAttribute="top" secondItem="I9E-An-tSN" secondAttribute="bottom" constant="24" id="oYk-yd-XoR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

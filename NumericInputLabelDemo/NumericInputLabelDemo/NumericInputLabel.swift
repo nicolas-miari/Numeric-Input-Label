@@ -91,6 +91,12 @@ class NumericInputLabel: UILabel, UITextInputTraits, UIKeyInput {
         return true
     }
 
+    var customInputAccessoryView: UIView?
+
+    override var inputAccessoryView: UIView? {
+        return customInputAccessoryView
+    }
+
     // MARK: - UIView
 
     /**
